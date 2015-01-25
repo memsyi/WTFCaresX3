@@ -50,7 +50,7 @@ public class Pickup : MonoBehaviour
 
 	void OnTriggerStay(Collider other)
 	{
-		Debug.Log (other.name);
+		//Debug.Log (other.name);
 
 		if(m_bIsHeld == true)
 			return;
