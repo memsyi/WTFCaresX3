@@ -22,9 +22,9 @@ public class NavMeshMovement : MonoBehaviour
 			Ray ray = petCam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 
-			RaycastHit[] hits = Physics.RaycastAll(ray, 10000.0f);
+			RaycastHit[] hits = Physics.RaycastAll(ray, 20000.0f);
 
-			Debug.DrawRay( ray.origin, ray.direction * 10000.0f, Color.red );
+			Debug.DrawRay( ray.origin, ray.direction * 20000.0f, Color.red );
 
 			if( hits.Length == 0 )
 				return;

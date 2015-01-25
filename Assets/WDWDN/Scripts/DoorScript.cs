@@ -27,14 +27,7 @@ public class DoorScript : MonoBehaviour
 		    col.transform.gameObject.name == "Person" )
 		{
 			if( col.transform.gameObject.GetComponent<PickUpAction>().m_Item == null )
-			{
-				NavMeshAgent agent = col.transform.gameObject.GetComponent<NavMeshAgent>();
-				if( agent != null )
-				{
-					agent.Stop();
-				}
 				return;
-			}
 
 			if( col.transform.gameObject.GetComponent<PickUpAction>().m_Item.name == keyRequired )
 			{
