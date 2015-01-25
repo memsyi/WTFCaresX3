@@ -19,17 +19,6 @@ public class PressButtonTween : MonoBehaviour
 
 	public void Notify()
 	{
-		//while(true)
-		{
-			Debug.Log("Doing");
-
-		if(ControlerWrapper.Get().X_Hit(0)|| ControlerWrapper.Get().X_Hold(0))
-		{
-				Debug.Log("BREAKING!!!");
-				return;
-			}
-
-
-		}
+		gameObject.SetActive (false);
 	}
 }
