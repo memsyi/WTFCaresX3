@@ -108,6 +108,7 @@ public class PickUpAction : MonoBehaviour
 
 			m_amHolding = false;
 
+
 			m_Item.transform.rigidbody.useGravity = true;
 			m_Item.rigidbody.isKinematic = false;
 			m_Item.collider.isTrigger = false;

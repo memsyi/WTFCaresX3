@@ -1,0 +1,88 @@
+fileFormatVersion: 2
+guid: c6f21e5ae1c60ec4dbdfc3bdab36cce2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: lf_Arm
+    100004: Lf_leg
+    100006: Lf_leg1
+    100008: pCube28
+    100010: Rt_arm
+    100012: Rt_leg
+    100014: transform40
+    100016: transform41
+    100018: transform42
+    100020: transform43
+    100022: transform44
+    400000: //RootNode
+    400002: lf_Arm
+    400004: Lf_leg
+    400006: Lf_leg1
+    400008: pCube28
+    400010: Rt_arm
+    400012: Rt_leg
+    400014: transform40
+    400016: transform41
+    400018: transform42
+    400020: transform43
+    400022: transform44
+    2300000: Lf_leg1
+    3300000: Lf_leg1
+    4300000: Lf_leg1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .400000006
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
