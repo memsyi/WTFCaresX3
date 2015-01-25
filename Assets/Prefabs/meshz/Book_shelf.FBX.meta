@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf482d6a267545443834099e3622767c
+guid: 34dbdd8139baaa5409a02b376faa8ba2
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Phone
+    4300000: Book_shelf
     9500000: //RootNode
   materials:
     importMaterials: 1
