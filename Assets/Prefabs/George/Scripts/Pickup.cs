@@ -18,6 +18,12 @@ public class Pickup : MonoBehaviour
 			Debug.Log("Adding a ridid body becuase it didnt have one");
 				Rigidbody r = gameObject.AddComponent<Rigidbody>();
 		}
+		if(transform.collider== null)
+		{
+			Collider c = gameObject.AddComponent<Collider>();
+			c.isTrigger = true;
+		}
+
 		
 		m_fGCountDown = CoolDown;
 	}
