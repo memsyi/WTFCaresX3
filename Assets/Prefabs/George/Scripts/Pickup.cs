@@ -3,20 +3,22 @@ using System.Collections;
 
 public class Pickup : MonoBehaviour 
 {
-
 	public bool m_bIsHeld = false;
-
 
 	float m_fGCountDown;
 
-
-	public const float CoolDown = 1.0f;
-
+	public const float CoolDown = 3.0f;
 
 	public bool m_bIsGravity = true;
 	// Use this for initialization
 	void Start () 
 	{
+		if (rigidbody == null) 
+		{
+			Debug.Log("Adding a ridid body becuase it didnt have one");
+				Rigidbody r = gameObject.AddComponent<Rigidbody>();
+		}
+		
 		m_fGCountDown = CoolDown;
 	}
 	
@@ -37,7 +39,6 @@ public class Pickup : MonoBehaviour
 
 				m_fGCountDown = CoolDown;
 			}
-
 		}
 	}
 
@@ -53,8 +54,4 @@ public class Pickup : MonoBehaviour
 			other.GetComponent<PickUpAction>().Notified(this);
 		}
 	}
-
-
-
-
 }
