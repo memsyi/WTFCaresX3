@@ -1343,12 +1343,19 @@ public class UICamera : MonoBehaviour
 				justPressed = true;
 				isPressed = true;
 			}
+			if (ControlerWrapper.Get ().X_Hit (0) || ControlerWrapper.Get ().X_Hold (0)) 
+			{
+				justPressed = true;
+				isPressed = true;
+			}
 			else if (Input.GetMouseButton(i))
 			{
 				currentScheme = ControlScheme.Mouse;
 				isPressed = true;
 			}
 		}
+
+
 
 		// No need to perform raycasts every frame
 		if (isPressed || posChanged || mNextRaycast < RealTime.time)
