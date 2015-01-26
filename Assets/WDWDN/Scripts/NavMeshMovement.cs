@@ -5,6 +5,8 @@ public class NavMeshMovement : MonoBehaviour
 {
 	NavMeshAgent agent;
 	public Camera petCam;
+	public bool bouncedAway = false;
+	public float bounceTimer = .2f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +15,27 @@ public class NavMeshMovement : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		if( bouncedAway == false )
+		{
+			if( rigidbody.angularVelocity != Vector3.zero )
+				rigidbody.angularVelocity = Vector3.zero;
+			
+			if( rigidbody.velocity != Vector3.zero )
+				rigidbody.velocity = Vector3.zero;
+		}
+
+		if( bouncedAway == true )
+		{
+			bounceTimer -= Time.deltaTime;
+			if(bounceTimer <= 0)
+			{
+				rigidbody.angularVelocity = Vector3.zero;
+				rigidbody.velocity = Vector3.zero;
+				bounceTimer = .2f;
+				bouncedAway = false;
+			}
+		}
+
 		if (Input.mousePosition.x < Screen.width / 2 || Input.mousePosition.x > Screen.width || 
 		    Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height)
 			return;

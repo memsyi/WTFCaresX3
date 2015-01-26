@@ -9,12 +9,14 @@ public class InteractiveObj : MonoBehaviour
 
 	void Start()
 	{
-		label.GetComponent<UILabel> ().text = transform.parent.name;
+		label.GetComponent<UILabel> ().text = transform.name;
 	}
 
 	void Update()
 	{
-		guiPopUp.transform.position = transform.position;
+		guiPopUp.transform.position = new Vector3( transform.position.x + 20,
+		                                           transform.position.y,
+		                                           transform.position.z - 40);
 	}
 
 	void OnMouseOver()
